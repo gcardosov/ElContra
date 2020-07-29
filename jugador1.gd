@@ -3,6 +3,7 @@ extends Position2D
 var Velocidad = Vector2()
 export (float) var GRAVEDAD = 100
 export (float) var VEL_MOVIMIENTO = 25
+export (float) var VEL_SALTO = 25
 
 func _ready():
 	pass
@@ -24,6 +25,10 @@ func _physics_process(delta):
 	else:
 		Velocidad.x = 0
 		get_node("animacion_J1").play("j1_idle")
+		
+	if(Input.is_action_pressed("tecla_z")):
+		Velocidad.y -= VEL_SALTO
+		get_node("animacion_J1").play("j1_salto")
 	#
 	var movimiento = Velocidad * delta
 	get_node("cuerpo_J1").move_and_slide(movimiento)
