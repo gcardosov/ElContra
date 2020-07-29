@@ -2,9 +2,9 @@
 
 [ext_resource path="res://Tile/nivel1.png" type="Texture" id=1]
 [ext_resource path="res://jugador1.gd" type="Script" id=2]
-[ext_resource path="res://Sprites/j1_salto.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/j1_idle.png" type="Texture" id=3]
 [ext_resource path="res://Sprites/j1_run.png" type="Texture" id=4]
-[ext_resource path="res://Sprites/j1_idle.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/j1_salto.png" type="Texture" id=5]
 
 [sub_resource type="RectangleShape2D" id=2]
 
@@ -260,7 +260,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ ExtResource( 5 ) ]
+"values": [ ExtResource( 3 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("cuerpo_J1/spr_J1:hframes")
@@ -303,7 +303,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ ExtResource( 3 ) ]
+"values": [ ExtResource( 5 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("cuerpo_J1/spr_J1:hframes")
@@ -328,7 +328,9 @@ scale = Vector2( 1.1679, 1.57857 )
 texture = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo" type="StaticBody2D" parent="background" index="0"]
+[node name="suelo" type="StaticBody2D" parent="background" index="0" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -345,7 +347,9 @@ position = Vector2( -1328.72, -12.0262 )
 scale = Vector2( 0.99122, 0.668367 )
 shape = SubResource( 2 )
 
-[node name="suelo2" type="StaticBody2D" parent="background" index="1"]
+[node name="suelo2" type="StaticBody2D" parent="background" index="1" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -362,7 +366,9 @@ position = Vector2( -753.36, -13.8415 )
 scale = Vector2( 0.99122, 0.683404 )
 shape = SubResource( 3 )
 
-[node name="suelo3" type="StaticBody2D" parent="background" index="2"]
+[node name="suelo3" type="StaticBody2D" parent="background" index="2" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -379,7 +385,9 @@ position = Vector2( -415.944, -13.3775 )
 scale = Vector2( 0.996199, 0.683404 )
 shape = SubResource( 4 )
 
-[node name="suelo4" type="StaticBody2D" parent="background" index="3"]
+[node name="suelo4" type="StaticBody2D" parent="background" index="3" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -397,7 +405,9 @@ scale = Vector2( 1, 0.458216 )
 shape = SubResource( 5 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo5" type="StaticBody2D" parent="background" index="4"]
+[node name="suelo5" type="StaticBody2D" parent="background" index="4" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -415,7 +425,9 @@ scale = Vector2( 0.995582, 0.334065 )
 shape = SubResource( 6 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo6" type="StaticBody2D" parent="background" index="5"]
+[node name="suelo6" type="StaticBody2D" parent="background" index="5" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -433,7 +445,9 @@ scale = Vector2( 1, 0.209887 )
 shape = SubResource( 7 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo7" type="StaticBody2D" parent="background" index="6"]
+[node name="suelo7" type="StaticBody2D" parent="background" index="6" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -451,7 +465,9 @@ scale = Vector2( 1, 0.209887 )
 shape = SubResource( 8 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo8" type="StaticBody2D" parent="background" index="7"]
+[node name="suelo8" type="StaticBody2D" parent="background" index="7" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -469,7 +485,9 @@ scale = Vector2( 1, 0.209887 )
 shape = SubResource( 9 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo9" type="StaticBody2D" parent="background" index="8"]
+[node name="suelo9" type="StaticBody2D" parent="background" index="8" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -487,7 +505,9 @@ scale = Vector2( 1, 0.209887 )
 shape = SubResource( 10 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo10" type="StaticBody2D" parent="background" index="9"]
+[node name="suelo10" type="StaticBody2D" parent="background" index="9" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -505,7 +525,9 @@ scale = Vector2( 1, 0.209887 )
 shape = SubResource( 11 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo11" type="StaticBody2D" parent="background" index="10"]
+[node name="suelo11" type="StaticBody2D" parent="background" index="10" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -523,7 +545,9 @@ scale = Vector2( 1, 0.209887 )
 shape = SubResource( 12 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo12" type="StaticBody2D" parent="background" index="11"]
+[node name="suelo12" type="StaticBody2D" parent="background" index="11" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -541,7 +565,9 @@ scale = Vector2( 1, 0.209887 )
 shape = SubResource( 13 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo13" type="StaticBody2D" parent="background" index="12"]
+[node name="suelo13" type="StaticBody2D" parent="background" index="12" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -559,7 +585,9 @@ scale = Vector2( 1, 0.209887 )
 shape = SubResource( 14 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo14" type="StaticBody2D" parent="background" index="13"]
+[node name="suelo14" type="StaticBody2D" parent="background" index="13" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -577,7 +605,9 @@ scale = Vector2( 1, 0.209887 )
 shape = SubResource( 15 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo15" type="StaticBody2D" parent="background" index="14"]
+[node name="suelo15" type="StaticBody2D" parent="background" index="14" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -595,7 +625,9 @@ scale = Vector2( 1, 0.209887 )
 shape = SubResource( 16 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo16" type="StaticBody2D" parent="background" index="15"]
+[node name="suelo16" type="StaticBody2D" parent="background" index="15" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -613,7 +645,9 @@ scale = Vector2( 1.01888, 0.430572 )
 shape = SubResource( 17 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo17" type="StaticBody2D" parent="background" index="16"]
+[node name="suelo17" type="StaticBody2D" parent="background" index="16" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -631,7 +665,9 @@ scale = Vector2( 1.01888, 0.430572 )
 shape = SubResource( 18 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo18" type="StaticBody2D" parent="background" index="17"]
+[node name="suelo18" type="StaticBody2D" parent="background" index="17" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -649,7 +685,9 @@ scale = Vector2( 1.01888, 0.430572 )
 shape = SubResource( 19 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo19" type="StaticBody2D" parent="background" index="18"]
+[node name="suelo19" type="StaticBody2D" parent="background" index="18" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -667,7 +705,9 @@ scale = Vector2( 1.01888, 0.285033 )
 shape = SubResource( 20 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo20" type="StaticBody2D" parent="background" index="19"]
+[node name="suelo20" type="StaticBody2D" parent="background" index="19" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -685,7 +725,9 @@ scale = Vector2( 1.01888, 0.285033 )
 shape = SubResource( 21 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo21" type="StaticBody2D" parent="background" index="20"]
+[node name="suelo21" type="StaticBody2D" parent="background" index="20" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -703,7 +745,9 @@ scale = Vector2( 1, 0.127656 )
 shape = SubResource( 22 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo22" type="StaticBody2D" parent="background" index="21"]
+[node name="suelo22" type="StaticBody2D" parent="background" index="21" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -721,7 +765,9 @@ scale = Vector2( 1, 0.280885 )
 shape = SubResource( 23 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo23" type="StaticBody2D" parent="background" index="22"]
+[node name="suelo23" type="StaticBody2D" parent="background" index="22" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -739,7 +785,9 @@ scale = Vector2( 1, 0.280885 )
 shape = SubResource( 24 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo24" type="StaticBody2D" parent="background" index="23"]
+[node name="suelo24" type="StaticBody2D" parent="background" index="23" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -757,7 +805,9 @@ scale = Vector2( 1, 0.186212 )
 shape = SubResource( 25 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo25" type="StaticBody2D" parent="background" index="24"]
+[node name="suelo25" type="StaticBody2D" parent="background" index="24" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -775,7 +825,9 @@ scale = Vector2( 1, 0.23192 )
 shape = SubResource( 26 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo26" type="StaticBody2D" parent="background" index="25"]
+[node name="suelo26" type="StaticBody2D" parent="background" index="25" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -793,7 +845,9 @@ scale = Vector2( 1, 0.387906 )
 shape = SubResource( 27 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo27" type="StaticBody2D" parent="background" index="26"]
+[node name="suelo27" type="StaticBody2D" parent="background" index="26" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -811,7 +865,9 @@ scale = Vector2( 1, 0.23192 )
 shape = SubResource( 28 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo28" type="StaticBody2D" parent="background" index="27"]
+[node name="suelo28" type="StaticBody2D" parent="background" index="27" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -829,7 +885,9 @@ scale = Vector2( 1, 0.308025 )
 shape = SubResource( 29 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo29" type="StaticBody2D" parent="background" index="28"]
+[node name="suelo29" type="StaticBody2D" parent="background" index="28" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -847,7 +905,9 @@ scale = Vector2( 1, 0.510296 )
 shape = SubResource( 30 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo30" type="StaticBody2D" parent="background" index="29"]
+[node name="suelo30" type="StaticBody2D" parent="background" index="29" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -865,7 +925,9 @@ scale = Vector2( 1, 0.510296 )
 shape = SubResource( 30 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo31" type="StaticBody2D" parent="background" index="30"]
+[node name="suelo31" type="StaticBody2D" parent="background" index="30" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -883,7 +945,9 @@ scale = Vector2( 1, 0.510296 )
 shape = SubResource( 31 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo32" type="StaticBody2D" parent="background" index="31"]
+[node name="suelo32" type="StaticBody2D" parent="background" index="31" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -901,7 +965,9 @@ scale = Vector2( 1, 0.510296 )
 shape = SubResource( 32 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo33" type="StaticBody2D" parent="background" index="32"]
+[node name="suelo33" type="StaticBody2D" parent="background" index="32" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -919,7 +985,9 @@ scale = Vector2( 1, 0.510296 )
 shape = SubResource( 33 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo34" type="StaticBody2D" parent="background" index="33"]
+[node name="suelo34" type="StaticBody2D" parent="background" index="33" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -937,7 +1005,9 @@ scale = Vector2( 1, 0.510296 )
 shape = SubResource( 34 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo35" type="StaticBody2D" parent="background" index="34"]
+[node name="suelo35" type="StaticBody2D" parent="background" index="34" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -955,7 +1025,9 @@ scale = Vector2( 0.667601, 0.510296 )
 shape = SubResource( 34 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo36" type="StaticBody2D" parent="background" index="35"]
+[node name="suelo36" type="StaticBody2D" parent="background" index="35" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -973,7 +1045,9 @@ scale = Vector2( 0.667601, 0.510296 )
 shape = SubResource( 35 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo37" type="StaticBody2D" parent="background" index="36"]
+[node name="suelo37" type="StaticBody2D" parent="background" index="36" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -991,7 +1065,9 @@ scale = Vector2( 0.667601, 0.510296 )
 shape = SubResource( 34 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo38" type="StaticBody2D" parent="background" index="37"]
+[node name="suelo38" type="StaticBody2D" parent="background" index="37" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -1009,7 +1085,9 @@ scale = Vector2( 0.667601, 0.481845 )
 shape = SubResource( 36 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo39" type="StaticBody2D" parent="background" index="38"]
+[node name="suelo39" type="StaticBody2D" parent="background" index="38" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -1027,7 +1105,9 @@ scale = Vector2( 0.667601, 0.435874 )
 shape = SubResource( 37 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo40" type="StaticBody2D" parent="background" index="39"]
+[node name="suelo40" type="StaticBody2D" parent="background" index="39" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -1045,7 +1125,9 @@ scale = Vector2( 0.667601, 0.390246 )
 shape = SubResource( 38 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="suelo41" type="StaticBody2D" parent="background" index="40"]
+[node name="suelo41" type="StaticBody2D" parent="background" index="40" groups=[
+"suelo",
+]]
 
 editor/display_folded = true
 input_pickable = false
@@ -1072,7 +1154,9 @@ GRAVEDAD = 5000.0
 VEL_MOVIMIENTO = 4000.0
 VEL_SALTO = 250.0
 
-[node name="cuerpo_J1" type="KinematicBody2D" parent="jugador1" index="0"]
+[node name="cuerpo_J1" type="KinematicBody2D" parent="jugador1" index="0" groups=[
+"player",
+]]
 
 editor/display_folded = true
 position = Vector2( -2.21912, 0.832169 )
@@ -1085,7 +1169,7 @@ collision/safe_margin = 0.08
 
 position = Vector2( 0.731064, -4.0788 )
 texture = ExtResource( 3 )
-hframes = 4
+hframes = 2
 _sections_unfolded = [ "Animation" ]
 
 [node name="colision_J1" type="CollisionShape2D" parent="jugador1/cuerpo_J1" index="1"]
