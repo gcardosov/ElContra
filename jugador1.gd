@@ -32,3 +32,11 @@ func _physics_process(delta):
 	#
 	var movimiento = Velocidad * delta
 	get_node("cuerpo_J1").move_and_slide(movimiento)
+	#obtener los coliders
+	
+	if(get_node("cuerpo_J1").get_slide_collision(get_node("cuerpo_J1").get_slide_count()-1) != null):
+		var obj_colisionado =  get_node("cuerpo_J1").get_slide_collision(get_node("cuerpo_J1").get_slide_count()-1).collider
+	
+	
+	
+	
